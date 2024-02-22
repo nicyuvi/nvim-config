@@ -17,13 +17,7 @@ null_ls.setup({
 	sources = {
 		--  to disable file types use
 		--  "formatting.prettierd.with({disabled_filetypes = {}})" (see null-ls docs)
-		formatting.prettierd.with({
-			-- format with prettier prioritizing local prettier config
-			condition = function(utils)
-				return utils.root_has_file({ ".prettierrc", ".prettierrc.json", "prettier.config.js" })
-			end,
-			prefer_local = "node_modules/.bin",
-		}), -- js/ts formatter
+		formatting.prettierd, -- js/ts/css/html ect. formatter
 		formatting.stylua, -- lua formatter
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js, .eslintrc.json, or .eslintrc.cjs
@@ -31,8 +25,12 @@ null_ls.setup({
 				return utils.root_has_file({ ".eslintrc.js", ".eslintrc.json", ".eslintrc.cjs" })
 			end,
 		}),
-		formatting.autopep8, -- python formatter
 		diagnostics.flake8, -- python linter
+		formatting.black, -- python formatter
+		formatting.isort, -- python import formatter
+		formatting.djlint, -- django template formatter
+		diagnostics.djlint, -- django template linter
+		formatting.sql_formatter, -- sql formatter
 	},
 
 	-- configure format on save

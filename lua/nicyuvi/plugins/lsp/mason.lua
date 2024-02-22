@@ -44,11 +44,14 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
 	-- list of formatters & linters for mason to install
 	ensure_installed = {
-		"prettierd", -- ts/js formatter
+		"prettierd", -- js/ts/css/html ect. formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
 		"flake8", -- python linter
-		"autopep8", -- python formatter
+		"black", -- python formatter
+		"isort", -- python import sorter since black doesn't do this
+		"djlint", -- django template linter and formatter
+		"sql-formatter", -- sql formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
