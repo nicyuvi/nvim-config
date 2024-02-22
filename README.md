@@ -1,5 +1,3 @@
-[Config guide](https://www.youtube.com/watch?v=vdn_pKJUda8&t=1758s&ab_channel=JoseanMartinez)
-
 ### Windows Terminal:
 
 Nerd Font: FiraCode
@@ -25,3 +23,11 @@ Nerd Font: FiraCode
 - [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
   - for telescope plugin
 - [fd](https://github.com/sharkdp/fd?tab=readme-ov-file#installation)
+
+### Installation:
+
+```
+git clone git@github.com:nicyuvi/nvim-config.git ~/.config/nvim
+
+nvim
+```
