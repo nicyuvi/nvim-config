@@ -31,6 +31,7 @@ null_ls.setup({
 		formatting.djlint, -- django template formatter
 		diagnostics.djlint, -- django template linter
 		formatting.sql_formatter, -- sql formatter
+		formatting.taplo, -- toml formatter
 	},
 
 	-- configure format on save

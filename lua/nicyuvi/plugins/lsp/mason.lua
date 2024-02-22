@@ -52,6 +52,7 @@ mason_null_ls.setup({
 		"isort", -- python import sorter since black doesn't do this
 		"djlint", -- django template linter and formatter
 		"sql-formatter", -- sql formatter
+		"taplo", -- toml formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
