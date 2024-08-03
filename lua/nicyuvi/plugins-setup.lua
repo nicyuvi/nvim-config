@@ -138,4 +138,6 @@ require("lazy").setup({
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
+	--generate TOC for markdown files
+	"richardbizik/nvim-toc",
 })
