@@ -108,7 +108,12 @@ require("lazy").setup({
 	"onsails/lspkind.nvim", -- vs-code like icons for autocompletion
 
 	-- formatting & linting
-	"nvimtools/none-ls.nvim", -- configure formatters & linters
+  {
+    "nvimtools/none-ls.nvim", -- configure formatters & linters
+    dependencies = {
+      "nvimtools/none-ls-extras.nvim",
+    },
+  },
 	"jay-babu/mason-null-ls.nvim", -- bridges gap b/w mason & null-ls
 
 	-- treesitter configuration

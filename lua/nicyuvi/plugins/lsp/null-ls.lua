@@ -19,12 +19,7 @@ null_ls.setup({
 		--  "formatting.prettierd.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettierd, -- js/ts/css/html ect. formatter
 		formatting.stylua, -- lua formatter
-		diagnostics.eslint_d.with({ -- js/ts linter
-			-- only enable eslint if root has .eslintrc.js, .eslintrc.json, or .eslintrc.cjs
-			condition = function(utils)
-				return utils.root_has_file({ ".eslintrc.js", ".eslintrc.json", ".eslintrc.cjs" })
-			end,
-		}),
+    require("none-ls.diagnostics.eslint_d"),
 		diagnostics.flake8, -- python linter
 		formatting.black, -- python formatter
 		formatting.isort, -- python import formatter
