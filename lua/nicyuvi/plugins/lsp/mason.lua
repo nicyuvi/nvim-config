@@ -36,6 +36,7 @@ mason_lspconfig.setup({
 		"svelte",
 		"volar", -- Vue
 		"pyright", -- python lsp
+		"taplo",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -52,7 +53,6 @@ mason_null_ls.setup({
 		"isort", -- python import sorter since black doesn't do this
 		"djlint", -- django template linter and formatter
 		"sql-formatter", -- sql formatter
-		"taplo", -- toml formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

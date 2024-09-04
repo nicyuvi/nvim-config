@@ -26,7 +26,6 @@ null_ls.setup({
 		formatting.djlint, -- django template formatter
 		diagnostics.djlint, -- django template linter
 		formatting.sql_formatter, -- sql formatter
-    -- taplo formatter
 	},
 
 	-- configure format on save
