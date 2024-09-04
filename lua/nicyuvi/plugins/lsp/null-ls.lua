@@ -19,14 +19,14 @@ null_ls.setup({
 		--  "formatting.prettierd.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettierd, -- js/ts/css/html ect. formatter
 		formatting.stylua, -- lua formatter
-    require("none-ls.diagnostics.eslint_d"),
-		diagnostics.flake8, -- python linter
+		require("none-ls.diagnostics.eslint_d"),
+		require("none-ls.diagnostics.flake8"),
 		formatting.black, -- python formatter
 		formatting.isort, -- python import formatter
 		formatting.djlint, -- django template formatter
 		diagnostics.djlint, -- django template linter
 		formatting.sql_formatter, -- sql formatter
-		formatting.taplo, -- toml formatter
+    -- taplo formatter
 	},
 
 	-- configure format on save
