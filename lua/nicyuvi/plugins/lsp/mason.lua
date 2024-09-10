@@ -37,6 +37,7 @@ mason_lspconfig.setup({
 		"volar", -- Vue
 		"pyright", -- python lsp
 		"taplo",
+		"clangd", -- C, C++, etc.
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -53,6 +54,7 @@ mason_null_ls.setup({
 		"isort", -- python import sorter since black doesn't do this
 		"djlint", -- django template linter and formatter
 		"sql-formatter", -- sql formatter
+		"clang_format", -- C, C++ formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
