@@ -22,7 +22,7 @@ mason.setup()
 mason_lspconfig.setup({
 	-- list of servers for mason to install
 	ensure_installed = {
-		"ts_ls",
+		"tsserver",
 		"html",
 		"cssls",
 		"tailwindcss",
@@ -41,6 +41,15 @@ mason_lspconfig.setup({
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
+})
+
+-- https://github.com/neovim/nvim-lspconfig/pull/3232#issuecomment-2331025714
+mason_lspconfig.setup_handlers({
+	function(server_name)
+		if server_name == "tsserver" then
+			server_name = "ts_ls"
+		end
+	end,
 })
 
 mason_null_ls.setup({
