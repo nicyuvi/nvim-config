@@ -10,9 +10,14 @@
 
 -- One Dark - navarasu/onedark.nvim
 
-require('onedark').setup {
-    style = 'warm',
-    transparent = "true",
-}
+require("onedark").setup({
+	style = "warmer",
+	transparent = "true",
+	highlights = {
+		["@comment"] = { fg = "#50C878" },
+		["@punctuation.bracket"] = { fg = "#fff" },
+		["@punctuation.delimiter"] = { fg = "#fff" },
+	},
+})
 
-require('onedark').load()
+require("onedark").load()
