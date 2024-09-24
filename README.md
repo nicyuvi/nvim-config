@@ -13,8 +13,8 @@ Nerd Font: FiraCode
             {
                 "face": "FiraCode Nerd Font Mono"
             },
-            "opacity": 72,
-            "useAcrylic": true
+            "opacity": 96,
+            "useAcrylic": false
         },
 ```
 
